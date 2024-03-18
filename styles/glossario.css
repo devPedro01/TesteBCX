@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------------- MENU ----------------- */
+
+.navbar  {
+  background-color: #121930;
+}
+.navbar a {
+  color: #fff;
+}
+.navbar a:hover {
+  color: #ffffffb4;
+}
+.navbar-toggler {
+  padding: 7px;
+}
+.btn {
+  padding: 6px 20px;
+  border-radius: 10px;
+  font-size: 88%;
+  background-color: #b09c70;
+  border: none;
+  color: #121930;
+  transition: 0.5s;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+.btn:hover {
+  background-color: #b09c70;
+  color: #fff;
+}
+.type-1 {
+  --color: #b09c70;
+  padding: 6px 20px;
+  margin-left: 1em;
+  background-color: transparent;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: .5s;
+  font-weight: 700;
+  font-size: 88%;
+  border: 1px solid;
+  font-family: "Open Sans";
+  color: var(--color);
+  z-index: 1;
+}
+.type-1::before,
+.type-1::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
+}
+
+.type-1::before {
+  top: -1em;
+  left: -1em;
+}
+
+.type-1::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+
+.type-1:hover::before,
+.type-1:hover::after {
+  height: 410px;
+  width: 410px;
+}
+
+.type-1:hover {
+  color: #121930;
+}
+
+.type-1:active {
+  filter: brightness(0.8);
+}
+
+
+.container-fluid {
+    margin: 0 7%;
+}
+.container-fluid .btn {
+    margin: 5px;
+}
+
+/* ----------------- GLOSSARIO ----------------- */
+
+.glossario-titulo {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  position: relative;
+}
+.img {
+  z-index: 1;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background-image: url(../assets/bg-bitcoin.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-size: 1900px;
+  background-position-y: 49%;
+}
+.title-bg {
+  background-color: rgba(16, 24, 110, 0.85);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+.glossario-titulo h2 {
+  z-index: 3;
+  position: absolute;
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.row {
+  margin: 5% 0;
+}
+.glossario {
+  border-left: 1px solid rgba(0, 0, 0, 0.26);
+  border-right: 1px solid rgba(0, 0, 0, 0.26);
+}
+.glossario:hover .content h2{
+  color: rgb(173, 148, 5);
+  transition: .6s;
+}
+.glossario:hover {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  transition: .6s;
+}
+.content {
+  padding: 0 10%;
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+.content h2 {
+  color: rgba(0, 0, 0, 0.26);
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+.col img {
+  height: 40px;
+  margin: 0 15px;
+}
+.glossario:hover .col img {
+  background-image: url(../assets/icons8-bitcoin-64\ \(1\).png);
+}
+.row-1, .row-2, .row-3 {
+  visibility: hidden;
+}
+
+.produtos-btn {
+  padding: 6px 70px;
+  border-radius: 30px;
+  font-size: 77%;
+  background-color: #b09c70;
+  border: none;
+  position: relative;
+  color: #121930;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: .5s ease-in-out;
+}
+.produtos-btn:hover {
+  color: #fff;
+}
+.produtos-btn svg {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: 5px;
+}
+.produtos-btn:hover svg {
+  transform: translateX(20px);
+  transition: .6s ease-in-out;
+}
+.col {
+  position: relative;
+}
+.col-produtos {
+  background-color: #2a3184;
+  height: 15vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.iconLeft {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+.iconRight {
+  position: absolute;
+  top: 0;
+  left: 12px;
+}
+.right {
+  margin-bottom: 2.5em;
+}
+.col-sm {
+  width: 7%;
+}
+
+/* ----------------- FOOTER ----------------- */
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: #2a3184;
+  border-bottom: 5.5px solid #dda427;
+  font-family: 'Open Sans';
+}
+.footer-1 {
+  width: 40%;
+  padding: 2.5%;
+}
+.footer-1 h4 {
+  font-weight: 700;
+}
+.footer-1 span {
+  font-size: 88%;
+  margin: 5% 5% 5% 0;
+}
+.footer-1 a span:hover {
+  text-decoration: underline;
+}
+.footer-1 a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #2a3184;
+}
+.footer-1 p {
+  font-size: 80%;
+  font-weight: 400;
+}
+.footer-1 p span {
+  font-size: 100%;
+  font-weight: bolder;
+}
+.footer-2 {
+  width: 10%;
+  border-top: 10px solid #b09c70;
+}
+.footer-2 img {
+  width: 100%;
+  height: auto;
+}
+.footer-3 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5%;
+  width: 40%;
+  font-weight: 400;
+}
+.footer-3 button {
+  margin: 5% 30%;
+  padding: 1% 5%;
+  border-radius: 30px;
+  font-size: 77%;
+  background-color: #2a3184;
+  border: none;
+  color: #fff;
+  transition: 0.2s;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  border: none;
+}
+.footer-3 button:hover {
+  background-color: #121930;
+}
+.footer-3 span {
+  padding: 1%;
+}
+.footer-3 .foot-rights {
+  display: flex;
+  justify-content: right;
+  text-align: right;
+}
+.footer-3 .social {
+  display: flex;
+  justify-content: right;
+}
+.footer-3 img {
+  height: 25px;
+  width: 25px;
+  margin: 1%;
+}
+.footer-3 a {
+  margin: .5%;
+}
+
+
+@media screen and (min-width: 768) {
+  .iconLeft {
+    left: 5px;
+  }
+}
+
+@media screen and (max-width: 1000) {
+    #bit {
+      display: none;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 760px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .col-5 {
+    width: 100%;
+  }
+  .iconLeft {
+    left: -10px;
+  }
+  .iconRight {
+    left: -5px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-1 {
+    width: 100%;
+  }
+  .footer-2 {
+    width: 100%;
+  }
+  .footer-2 img {
+    width: 25%;
+    margin-left: 37%;
+  }
+  .footer-3 {
+    width: 100%;
+  }
+  .footer-3 .foot-rights {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-3 a button {
+    font-size: 70%;
+  }
+}
