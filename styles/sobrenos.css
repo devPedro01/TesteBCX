@@ -418,6 +418,9 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
+  .card-title + div {
+    width: 50%;
+  }
   footer {
     display: flex;
     flex-direction: column;
@@ -480,7 +483,7 @@ footer {
   }
   .subsec-1 h2 {
     width: 80%;
-    margin: 0 10% 4% 0;
+    margin: 12% 10% 4% 0;
   }
   .subsec-1 div {
     right: 14%;
