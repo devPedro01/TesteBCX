@@ -114,6 +114,9 @@ main {
   width: 156%;
   height: 100%;
 }
+.main-1-img-sr {
+  visibility: hidden;
+}
 .main-2 {
   width: 20%;
   height: 100%;
@@ -123,6 +126,9 @@ main {
 .main-2 img {
   height: 60vh;
   margin-top: -10%;
+}
+.main-2-img-sr {
+  visibility: hidden;
 }
 .main-3 {
   width: 40%;
@@ -141,6 +147,9 @@ main {
 }
 .main-3 h1 span {
   font-weight: 800;
+}
+.main-3-h1-sr {
+  visibility: hidden;
 }
 
 /* ----------------- SEÇÃO 1 ----------------- */

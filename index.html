@@ -59,13 +59,13 @@
 
     <main>
       <div class="main-1">
-        <img class="touro" src="./assets/Touro_Algoritimo.svg" />
+        <img class="touro main-1-img-sr" src="./assets/Touro_Algoritimo.svg" />
       </div>
       <div class="main-2">
-        <img class="logoBCX" src="./assets/Logo-BCX-Completo-Vetorizado.svg" />
+        <img class="logoBCX main-2-img-sr" src="./assets/Logo-BCX-Completo-Vetorizado.svg" />
       </div>
       <div class="main-3">
-        <h1>Todo mundo precisa de <span>Cripto.</span></h1>
+        <h1 class="main-3-h1-sr">Todo mundo precisa de <span>Cripto.</span></h1>
       </div>
     </main>
 
@@ -283,6 +283,25 @@
       /* Biblioteca ScrollReveal */ 
 
       window.sr = ScrollReveal({ reset: true });
+
+      sr.reveal('.main-1-img-sr', {
+        duration: 1000, 
+        origin: 'left',
+        easing: 'ease-out',
+        distance: '60px'
+      })
+
+      sr.reveal('.main-2-img-sr', {
+        duration: 1200, 
+        opacity: -10,
+        easing: 'ease-in-out',
+      })
+
+      sr.reveal('.main-3-h1-sr', {
+        duration: 1200, 
+        opacity: -10,
+        easing: 'ease-in-out',
+      })
 
       sr.reveal('.subsec-1-sr-1', {
         duration: 1200,
