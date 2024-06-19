@@ -10,7 +10,8 @@
 /* ----------------- MENU ----------------- */
 
 .navbar {
-  background-color: #121930;
+  background-color: #011838;
+  position: sticky;
 }
 .navbar a {
   color: #fff;
@@ -26,19 +27,20 @@
   padding: 6px 20px;
   border-radius: 10px;
   font-size: 88%;
-  background-color: #b09c70;
+  background-color: #ceba85;
   border: none;
-  color: #121930;
+  color: #011838;
   transition: 0.5s;
-  font-family: "Open Sans";
+  font-family: "Helvetica";
   font-weight: 700;
+  transition: 0.5s ease-in-out;
 }
 .btn:hover {
-  background-color: #b09c70;
+  background-color: #ceba85;
   color: #fff;
 }
 .type-1 {
-  --color: #b09c70;
+  --color: #ceba85;
   padding: 6px 20px;
   margin-left: 1em;
   background-color: transparent;
@@ -49,7 +51,7 @@
   font-weight: 700;
   font-size: 88%;
   border: 1px solid;
-  font-family: "Open Sans";
+  font-family: "Helvetica";
   color: var(--color);
   z-index: 1;
 }
@@ -84,7 +86,7 @@
 }
 
 .type-1:hover {
-  color: #121930;
+  color: #011838;
 }
 
 .type-1:active {
@@ -97,6 +99,16 @@
 .container-fluid .btn {
   margin: 5px;
 }
+
+/* Google Translate */
+.gt_container--oiz9qs a.glink span {
+  font-size: 16px !important; 
+}
+
+.gt-current-lang {
+  border-bottom: 1px solid #ceba85;
+}
+
 
 /* ----------------- MAIN ----------------- */
 
@@ -111,7 +123,7 @@ main {
   height: 100%;
 }
 .main-1 img {
-  width: 156%;
+  width: 140%;
   height: 100%;
 }
 .main-1-img-sr {
@@ -125,7 +137,7 @@ main {
 }
 .main-2 img {
   height: 60vh;
-  margin-top: -10%;
+  margin-top: 12%;
 }
 .main-2-img-sr {
   visibility: hidden;
@@ -138,15 +150,15 @@ main {
   align-items: center;
 }
 .main-3 h1 {
-  margin-right: 30%;
+  margin-right: 20%;
   font-size: 5vw;
   text-align: end;
-  color: #121930;
-  font-family: "";
-  font-weight: 500;
+  color: #011838;
+  font-family: "Helvetica";
+  font-weight: 400;
 }
 .main-3 h1 span {
-  font-weight: 800;
+  font-weight: 700;
 }
 .main-3-h1-sr {
   visibility: hidden;
@@ -163,7 +175,7 @@ main {
   justify-content: center;
   height: 40vh;
   color: #fff;
-  gap: 4.5%;
+  gap: 10%;
 }
 
 .subsec-1 {
@@ -178,33 +190,33 @@ main {
 .subsec-1 h2 {
   width: 70%;
   float: right;
-  padding: 4%;
+  padding: 4% 0;
   text-align: end;
   font-weight: 700;
-  font-family: "Ubuntu";
+  font-family: "Helvetica";
 }
 
 .subsec-1 div {
   height: 12px;
   width: 20%;
-  background-color: #b09c70;
+  background-color: #ceba85;
   position: absolute;
-  right: 4%;
+  right: 0;
 }
 
 .subsec-1 h5 {
-  font-family: "Open Sans";
+  font-family: "Helvetica";
   font-weight: 300;
   letter-spacing: 3px;
   padding-bottom: 2%;
 }
 
 .subsec-1 p {
-  font-size: 1.7vh;
+  font-size: 1em;
   width: 70%;
   float: left;
   font-weight: 400;
-  font-family: "Open Sans";
+  font-family: "Helvetica";
 }
 
 /* ----------------- SEÇÃO 2 ----------------- */
@@ -214,6 +226,7 @@ main {
   align-items: center;
   justify-content: center;
   height: 60vh;
+  gap: 10%;
 }
 
 .subsec-2 {
@@ -230,28 +243,28 @@ main {
 .subsec-2 h2 {
   width: 60%;
   float: left;
-  padding: 4%;
-  color: #2a3184;
+  padding: 4% 0;
+  color: #011838;
   margin: 0 0 10%;
-  font-family: "Ubuntu";
+  font-family: "Helvetica";
   font-weight: 700;
 }
 
 .subsec-2 div {
   height: 12px;
   width: 20%;
-  background-color: #b09c70;
+  background-color: #ceba85;
   position: absolute;
-  left: 4.3%;
+  left: 0;
 }
 
 .subsec-2 p {
-  font-size: 1.7vh;
-  width: 85%;
+  font-size: 1em;
+  width: 100%;
   text-align: end;
-  color: #2a3184;
+  color: #011838;
   font-weight: 400;
-  font-family: "Open Sans";
+  font-family: "Helvetica";
 }
 
 /* ----------------- CLIENTES ----------------- */
@@ -282,9 +295,9 @@ main {
   visibility: hidden;
 }
 .clientes h6 {
-  color: #b09c70;
+  color: #ceba85;
   z-index: 3;
-  font-family: "Ubuntu";
+  font-family: "Helvetica";
   font-weight: 500;
   letter-spacing: 3px;
   margin-top: 5%;
@@ -310,14 +323,14 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 20px 15px;
-  font-family: "Open Sans";
+  font-family: "Helvetica";
   font-weight: 400;
 }
 .image-content {
   padding-bottom: 0;
 }
 .image-content p {
-  color: #121930;
+  color: #011838;
   margin: 2% 0;
   font-weight: 700;
   font-size: 1.4rem;
@@ -326,7 +339,7 @@ main {
 }
 .star {
   font-size: 13px;
-  color: #b09c70;
+  color: #ceba85;
 }
 /* IMAGENS FUTURAMENTE */
 .card-image {
@@ -346,7 +359,7 @@ main {
 }
 /* ------------------- */
 .card-content > div {
-  background-color: #b09c70;
+  background-color: #ceba85;
   height: 4px;
   width: 70%;
   margin-bottom: 5%;
@@ -354,13 +367,13 @@ main {
 .description {
   font-size: 14px;
   width: 70%;
-  color: #2a3184;
+  color: #011838;
   font-weight: 500;
   text-align: left;
 }
 
 .swiper-navBtn {
-  color: #121930;
+  color: #011838;
   font-weight: 800;
   height: 30px;
   width: 30px;
@@ -394,9 +407,9 @@ main {
 footer {
   display: flex;
   justify-content: center;
-  color: #2a3184;
-  border-bottom: 5.5px solid #dda427;
-  font-family: "Open Sans";
+  color: #011838;
+  border-bottom: 5.5px solid #ceba85;
+  font-family: "Helvetica";
 }
 .footer-1 {
   width: 40%;
@@ -415,7 +428,7 @@ footer {
 .footer-1 a {
   font-weight: 400;
   text-decoration: none;
-  color: #2a3184;
+  color: #011838;
 }
 .footer-1 p {
   font-size: 1.6vh;
@@ -427,7 +440,7 @@ footer {
 }
 .footer-2 {
   width: 10%;
-  border-top: 10px solid #b09c70;
+  border-top: 10px solid #ceba85;
 }
 .footer-2 img {
   width: 100%;
@@ -449,11 +462,11 @@ footer {
   border: none;
   color: #fff;
   transition: 0.2s;
-  font-family: "Open Sans";
+  font-family: "Helvetica";
   font-weight: 600;
 }
 .footer-3 button:hover {
-  background-color: #121930;
+  background-color: #011838;
 }
 .footer-3 span {
   padding: 1%;
@@ -473,6 +486,12 @@ footer {
 }
 .footer-3 a {
   margin: .5%;
+}
+
+@media screen and (max-width: 1400px) {
+  .subsec-2 h2 {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -573,7 +592,7 @@ footer {
     flex-direction: column;
   }
   .subsec-1 {
-    width: 80%;
+    width: 100%;
     margin: 10% 0;
   }
   .subsec-1 div {
@@ -591,7 +610,7 @@ footer {
     gap: 15px;
   }
   .subsec-2 {
-    width: 80%;
+    width: 100%;
     margin: 10% 0 0;
   }
   .subsec-2 h2 {

@@ -10,7 +10,7 @@
 /* ----------------- MENU ----------------- */
 
 .navbar  {
-  background-color: #121930;
+  background-color: #011838;
 }
 .navbar a {
   color: #fff;
@@ -26,19 +26,20 @@
   padding: 6px 20px;
   border-radius: 10px;
   font-size: 88%;
-  background-color: #b09c70;
+  background-color: #ceba85;
   border: none;
-  color: #121930;
+  color: #011838;
   transition: 0.5s;
-  font-family: "Open Sans";
+  font-family: "Helvetica";
   font-weight: 700;
+  transition: 0.5s ease-in-out;
 }
 .btn:hover {
-  background-color: #b09c70;
+  background-color: #ceba85;
   color: #fff;
 }
 .type-1 {
-  --color: #b09c70;
+  --color: #ceba85;
   padding: 6px 20px;
   margin-left: 1em;
   background-color: transparent;
@@ -49,7 +50,7 @@
   font-weight: 700;
   font-size: 88%;
   border: 1px solid;
-  font-family: "Open Sans";
+  font-family: "Helvetica";
   color: var(--color);
   z-index: 1;
 }
@@ -84,7 +85,7 @@
 }
 
 .type-1:hover {
-  color: #121930;
+  color: #011838;
 }
 
 .type-1:active {
@@ -97,6 +98,15 @@
 }
 .container-fluid .btn {
     margin: 5px;
+}
+
+/* Google Translate */
+.gt_container--oiz9qs a.glink span {
+  font-size: 16px !important; 
+}
+
+.gt-current-lang {
+  border-bottom: 1px solid #ceba85;
 }
 
 /* ----------------- GLOSSARIO ----------------- */
@@ -130,7 +140,7 @@
 .glossario-titulo h2 {
   z-index: 3;
   position: absolute;
-  font-family: 'Ubuntu';
+  font-family: 'Helvetica';
   font-weight: 700;
   letter-spacing: 3px;
 }
@@ -152,12 +162,12 @@
 }
 .content {
   padding: 0 10%;
-  font-family: 'Open Sans';
+  font-family: 'Helvetica';
   font-weight: 400;
 }
 .content h2 {
   color: rgba(0, 0, 0, 0.26);
-  font-family: 'Ubuntu';
+  font-family: 'Helvetica';
   font-weight: 500;
   letter-spacing: -1px;
 }
@@ -176,11 +186,11 @@
   padding: 6px 70px;
   border-radius: 30px;
   font-size: 77%;
-  background-color: #b09c70;
+  background-color: #ceba85;
   border: none;
   position: relative;
-  color: #121930;
-  font-family: 'Open Sans';
+  color: #011838;
+  font-family: 'Helvetica';
   font-weight: 700;
   letter-spacing: 1px;
   transition: .5s ease-in-out;
@@ -195,6 +205,7 @@
   height: 17px;
   position: absolute;
   left: 5px;
+  transition: .5s ease-in-out;
 }
 .produtos-btn:hover svg {
   transform: translateX(20px);
@@ -204,13 +215,19 @@
   position: relative;
 }
 .col-produtos {
-  background-color: #2a3184;
-  height: 15vh;
-  width: auto;
+  width: 100%;
+  height: 21vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin-top: 10%;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-color: #011838;
+  background-image: url(../assets/cabeçatouro.svg), linear-gradient(90deg, rgba(35,42,107,1) 0%, rgba(18,25,48,1) 50%, rgba(35,42,107,1) 100%);
+  background-size: 5500px;
+  background-position-y: 47%;
+  background-position-x: 55%;
+  background-attachment: fixed;
 }
 .iconLeft {
   position: absolute;
@@ -234,9 +251,9 @@
 footer {
   display: flex;
   justify-content: center;
-  color: #2a3184;
-  border-bottom: 5.5px solid #dda427;
-  font-family: 'Open Sans';
+  color: #011838;
+  border-bottom: 5.5px solid #ceba85;
+  font-family: "Helvetica";
 }
 .footer-1 {
   width: 40%;
@@ -255,19 +272,19 @@ footer {
 .footer-1 a {
   font-weight: 400;
   text-decoration: none;
-  color: #2a3184;
+  color: #011838;
 }
 .footer-1 p {
-  font-size: 80%;
+  font-size: 1.6vh;
   font-weight: 400;
 }
 .footer-1 p span {
   font-size: 100%;
-  font-weight: bolder;
+  font-weight: 800;
 }
 .footer-2 {
   width: 10%;
-  border-top: 10px solid #b09c70;
+  border-top: 10px solid #ceba85;
 }
 .footer-2 img {
   width: 100%;
@@ -289,12 +306,11 @@ footer {
   border: none;
   color: #fff;
   transition: 0.2s;
-  font-family: 'Open Sans';
+  font-family: "Helvetica";
   font-weight: 600;
-  border: none;
 }
 .footer-3 button:hover {
-  background-color: #121930;
+  background-color: #011838;
 }
 .footer-3 span {
   padding: 1%;
@@ -311,7 +327,6 @@ footer {
 .footer-3 img {
   height: 25px;
   width: 25px;
-  margin: 1%;
 }
 .footer-3 a {
   margin: .5%;

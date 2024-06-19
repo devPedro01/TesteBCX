@@ -10,7 +10,7 @@
 /* ----------------- MENU ----------------- */
 
 .navbar  {
-  background-color: #121930;
+  background-color: #011838;
 }
 .navbar a {
   color: #fff;
@@ -26,19 +26,20 @@
   padding: 6px 20px;
   border-radius: 10px;
   font-size: 88%;
-  background-color: #b09c70;
+  background-color: #ceba85;
   border: none;
-  color: #121930;
+  color: #011838;
   transition: 0.5s;
-  font-family: "Open Sans";
+  font-family: "Helvetica";
   font-weight: 700;
+  transition: 0.5s ease-in-out;
 }
 .btn:hover {
-  background-color: #b09c70;
+  background-color: #ceba85;
   color: #fff;
 }
 .type-1 {
-  --color: #b09c70;
+  --color: #ceba85;
   padding: 6px 20px;
   margin-left: 1em;
   background-color: transparent;
@@ -49,7 +50,7 @@
   font-weight: 700;
   font-size: 88%;
   border: 1px solid;
-  font-family: "Open Sans";
+  font-family: "Helvetica";
   color: var(--color);
   z-index: 1;
 }
@@ -84,7 +85,7 @@
 }
 
 .type-1:hover {
-  color: #121930;
+  color: #011838;
 }
 
 .type-1:active {
@@ -97,6 +98,15 @@
 }
 .container-fluid .btn {
     margin: 5px;
+}
+
+/* Google Translate */
+.gt_container--oiz9qs a.glink span {
+  font-size: 16px !important; 
+}
+
+.gt-current-lang {
+  border-bottom: 1px solid #ceba85;
 }
 
 /* ----------------- TRAJETORIA ------------- */
@@ -115,14 +125,14 @@
     display: flex;
     justify-content: center;
     padding: 3% 0;
-    background-color: #b09c70;
+    background-color: #ceba85;
     width: 100%;
     color: #fff;
-    font-family: 'Ubuntu';
+    font-family: 'Helvetica';
     font-weight: 700;
 }
 .trajetoria-titulo span {
-    color: #121930;
+    color: #011838;
 }
 .slide-container{
   max-width: 1120px;
@@ -142,17 +152,17 @@
   margin: 0 25px;
 }
 .image-content p {
-  font-family: 'Ubuntu';
+  font-family: 'Helvetica';
   font-weight: 700;
 }
 .card-content p {
-  font-family: 'Open Sans';
+  font-family: 'Helvetica';
   font-weight: 400;
 }
 .image-content{
   position: relative;
   flex-direction: row;
-  color: #b09c70;
+  color: #ceba85;
   font-size: 1.5rem;
 }
 
@@ -165,7 +175,7 @@
 }
 
 .swiper-navBtn{
-  color: #121930;
+  color: #011838;
   font-weight: 800;
   height: 3.5%;
   width: 2.5%;
@@ -217,8 +227,8 @@ main {
     float: right;
     padding: 4%;
     text-align: end;
-    color: #b09c70;
-    font-family: 'Ubuntu';
+    color: #ceba85;
+    font-family: 'Helvetica';
     font-weight: 700;
 }
 
@@ -235,20 +245,21 @@ main {
     width: 70%;
     float: left;
     text-align: justify;
-    color: #2a3184;
-    font-family: 'Open Sans';
+    color: #011838;
+    font-family: 'Helvetica';
     font-weight: 400;
 }
 
 .sec-img {
-    height: 10vh;
-    width: 10vw;
+    height: 15vh;
+    width: 100%;
     margin-bottom: 1%;
     display: flex;
     justify-content: center;
 }
 .sec-img img {
-    height: 90%;
+    height: 100%;
+    width: 100%;
 }
 
 .card {
@@ -262,8 +273,8 @@ main {
     padding: 40px;
 }
 .card-title {
-  font-family: '';
-  font-weight: 700;
+  font-family: 'Helvetica';
+  font-weight: 600;
 }
 .card-content {
   display: flex;
@@ -273,11 +284,11 @@ main {
   margin: 0;
 }
 .card-text {
-  list-style: circle;
+  list-style: disc;
   list-style-position: outside;
 }
 .card-text li {
-  font-family: 'Open Sans';
+  font-family: 'Helvetica';
   font-weight: 400;
   float: left;
 }
@@ -286,17 +297,17 @@ main {
     width: 10%;
     margin: 10px 0;
     border-radius: 20px;
-    background-color: #b09c70;
+    background-color: #ceba85;
 }
 .btn-back {
     width: 100%;
-    height: 24vh;
+    height: 21vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-repeat: no-repeat;
-    background-color: #121930;
+    background-color: #011838;
     background-image: url(../assets/cabeçatouro.svg), linear-gradient(90deg, rgba(35,42,107,1) 0%, rgba(18,25,48,1) 50%, rgba(35,42,107,1) 100%);
     background-size: 5500px;
     background-position-y: 47%;
@@ -307,12 +318,12 @@ main button {
     padding: 6px 70px;
     border-radius: 30px;
     font-size: 77%;
-    background-color: #b09c70;
+    background-color: #ceba85;
     border: none;
     transition: 0.2s;
     position: relative;
-    color: #121930;
-    font-family: 'Open Sans';
+    color: #011838;
+    font-family: 'Helvetica';
     font-weight: 700;
     letter-spacing: 1px;
     transition: .5s ease-in-out;
@@ -327,6 +338,7 @@ main button svg {
     height: 17px;
     position: absolute;
     left: 5px;
+    transition: .5s ease-in-out;
 }
 main button:hover svg {
     transform: translateX(20px);
@@ -337,9 +349,9 @@ main button:hover svg {
 footer {
   display: flex;
   justify-content: center;
-  color: #2a3184;
-  border-bottom: 5.5px solid #dda427;
-  font-family: 'Open Sans';
+  color: #011838;
+  border-bottom: 5.5px solid #ceba85;
+  font-family: "Helvetica";
 }
 .footer-1 {
   width: 40%;
@@ -358,19 +370,19 @@ footer {
 .footer-1 a {
   font-weight: 400;
   text-decoration: none;
-  color: #2a3184;
+  color: #011838;
 }
 .footer-1 p {
-  font-size: 80%;
+  font-size: 1.6vh;
   font-weight: 400;
 }
 .footer-1 p span {
   font-size: 100%;
-  font-weight: bolder;
+  font-weight: 800;
 }
 .footer-2 {
   width: 10%;
-  border-top: 10px solid #b09c70;
+  border-top: 10px solid #ceba85;
 }
 .footer-2 img {
   width: 100%;
@@ -392,11 +404,11 @@ footer {
   border: none;
   color: #fff;
   transition: 0.2s;
-  font-family: 'Open Sans';
+  font-family: "Helvetica";
   font-weight: 600;
 }
 .footer-3 button:hover {
-  background-color: #121930;
+  background-color: #011838;
 }
 .footer-3 span {
   padding: 1%;
@@ -419,9 +431,6 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
-  .card-title + div {
-    width: 50%;
-  }
   footer {
     display: flex;
     flex-direction: column;
@@ -484,7 +493,7 @@ footer {
   }
   .subsec-1 h2 {
     width: 80%;
-    margin: 12% 10% 4% 0;
+    margin: 0 10% 4% 0;
   }
   .subsec-1 div {
     right: 14%;
