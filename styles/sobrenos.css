@@ -314,7 +314,7 @@ main {
     background-position-x: 55%;
     background-attachment: fixed;
 }
-main button {
+.btn-back button {
     padding: 6px 70px;
     border-radius: 30px;
     font-size: 77%;
@@ -328,10 +328,10 @@ main button {
     letter-spacing: 1px;
     transition: .5s ease-in-out;
 }
-main button:hover {
+.btn-back  button:hover {
     color: #fff;
 }
-main button svg {
+.btn-back  button svg {
     background-color: #fff;
     border-radius: 20px;
     width: 17px;
@@ -340,7 +340,7 @@ main button svg {
     left: 5px;
     transition: .5s ease-in-out;
 }
-main button:hover svg {
+.btn-back  button:hover svg {
     transform: translateX(20px);
     transition: .6s ease-in-out;
 }
@@ -373,7 +373,7 @@ footer {
   color: #011838;
 }
 .footer-1 p {
-  font-size: 1.6vh;
+  font-size: 0.9em;
   font-weight: 400;
 }
 .footer-1 p span {
@@ -394,6 +394,9 @@ footer {
   padding: 2.5%;
   width: 40%;
   font-weight: 400;
+}
+.footer-3 a {
+  text-decoration: none;
 }
 .footer-3 button {
   margin: 5% 30%;
@@ -466,6 +469,9 @@ footer {
   .footer-3 .social {
     margin: 4% 0 0;
   }
+  main {
+    padding: 26px 0;
+  }
 }
 @media screen and (min-width: 769px) {
   .swiper-pagination {
@@ -501,10 +507,14 @@ footer {
   .footer-1 {
     width: 100%;
   }
+  .slide-container {
+    padding: 26px 0;
+  }
 }
 @media screen and (max-width: 440px) {
   .card-content {
     flex-direction: column;
     height: auto;
+    align-items: flex-start;
   }
 }

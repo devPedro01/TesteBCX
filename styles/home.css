@@ -431,7 +431,7 @@ footer {
   color: #011838;
 }
 .footer-1 p {
-  font-size: 1.6vh;
+  font-size: 0.9em;
   font-weight: 400;
 }
 .footer-1 p span {
@@ -453,11 +453,14 @@ footer {
   width: 40%;
   font-weight: 400;
 }
+.footer-3 a {
+  text-decoration: none;
+}
 .footer-3 button {
   margin: 5% 30%;
   padding: 1% 5%;
   border-radius: 30px;
-  font-size: 77%;
+  font-size: 1em;
   background-color: #2a3184;
   border: none;
   color: #fff;
@@ -590,6 +593,7 @@ footer {
   .con-1 {
     height: auto;
     flex-direction: column;
+    padding: 20px;
   }
   .subsec-1 {
     width: 100%;
@@ -608,6 +612,7 @@ footer {
     height: auto;
     flex-direction: column;
     gap: 15px;
+    padding: 23px;
   }
   .subsec-2 {
     width: 100%;
@@ -621,5 +626,8 @@ footer {
   }
   .clientes h6 {
     text-align: center;
+  }
+  .clientes {
+    padding: 20px 10px;
   }
 }

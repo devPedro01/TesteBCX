@@ -310,7 +310,7 @@ footer {
   color: #011838;
 }
 .footer-1 p {
-  font-size: 1.6vh;
+  font-size: 0.9em;
   font-weight: 400;
 }
 .footer-1 p span {
@@ -331,6 +331,9 @@ footer {
   padding: 2.5%;
   width: 40%;
   font-weight: 400;
+}
+.footer-3 a {
+  text-decoration: none;
 }
 .footer-3 button {
   margin: 5% 30%;
