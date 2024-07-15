@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Helvetica';
 }
 
 body {
@@ -36,7 +37,6 @@ body {
     border: none;
     color: #121930;
     transition: 0.5s;
-    font-family: "Helvetica";
     font-weight: 700;
     transition: 0.5s ease-in-out;
   }
@@ -56,7 +56,6 @@ body {
     font-weight: 700;
     font-size: 88%;
     border: 1px solid;
-    font-family: "Helvetica";
     color: var(--color);
     z-index: 1;
   }
@@ -239,7 +238,6 @@ footer {
   justify-content: center;
   color: #011838;
   border-bottom: 5.5px solid #ceba85;
-  font-family: "Helvetica";
 }
 .footer-1 {
   width: 40%;
@@ -263,7 +261,11 @@ footer {
 .footer-1 p {
   font-size: 0.9em;
   font-weight: 400;
+  width: 85%;
 }
+.footer-1 p:nth-last-child(1) {
+  margin-top: 20px;
+} 
 .footer-1 p span {
   font-size: 100%;
   font-weight: 800;
@@ -287,16 +289,23 @@ footer {
   text-decoration: none;
 }
 .footer-3 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 5% 30%;
   padding: 1% 5%;
   border-radius: 30px;
-  font-size: 77%;
   background-color: #2a3184;
   border: none;
-  color: #fff;
   transition: 0.2s;
-  font-family: "Helvetica";
+}
+.footer-3 button a {
+  color: #fff;
+  font-size: 0.9em;
   font-weight: 600;
+}
+.footer-3 button i {
+  margin-right: 3%;
 }
 .footer-3 button:hover {
   background-color: #011838;
@@ -308,6 +317,7 @@ footer {
   display: flex;
   justify-content: right;
   text-align: right;
+  flex-direction: column;
 }
 .footer-3 .social {
   display: flex;
@@ -330,6 +340,9 @@ footer {
   .footer-1 {
     width: 80%;
     margin: 3%;
+  }
+  .footer-1 p {
+    width: 100%;
   }
   .footer-2 {
     width: 100%;

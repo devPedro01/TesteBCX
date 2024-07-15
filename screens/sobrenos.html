@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../styles/sobrenos.css" />
+    <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet">
     <script src="https://cdn.gtranslate.net/widgets/latest/fc.js" defer></script>
   </head>
   <body>
@@ -41,9 +42,6 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./glossario.html">GLOSSÁRIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">PRODUTOS</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../index.html">HOME</a>
@@ -296,6 +294,61 @@
       </div>
 
     </main>
+
+    <section class="FAQ">
+
+          <h1>FAQ</h1>
+
+          <div class="accordion">
+            <div class="accordion-content">
+                <header>
+                    <span class="title">Como criar uma conta na BCX?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </header>
+                <p class="description">
+                  Para começar, você precisará selecionar a opção 'Registre-se' em nosso website. Ao fazer isso, será necessário aceitar nossos Termos de Uso e preencher um formulário com seus dados pessoais. Certifique-se de fornecer dados precisos e atualizados, uma vez que essas informações são necessárias para cumprir os requisitos do processo de Conheça Seu Cliente (KYC, na sigla em inglês). Assim que o formulário for preenchido e enviado, você estará oficialmente registrado em nossa plataforma. Seja bem-vindo à BCX!
+                </p>
+            </div>
+            <div class="accordion-content">
+                <header>
+                    <span class="title">Com quais ativos virtuais a BCX trabalha?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </header>
+                <p class="description">
+                  Na BCX, estamos focados no Bitcoin, utilizando estratégias e análises de mercado para oferecer os melhores serviços. Estamos constantemente avaliando novas opções de ativos virtuais para ampliar nossa oferta no futuro.
+                </p>
+            </div>
+            <div class="accordion-content">
+                <header>
+                    <span class="title">Qual o público alvo da BCX Corretora?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </header>
+                <p class="description">
+                  A BCX Corretora atende a todos os públicos, sem fazer distinção. Tendo você um perfil tradicional, conservador ou arrojado, estamos disponíveis para atender às suas necessidades da melhor maneira possível. Nossa equipe está pronta para oferecer suporte e orientação em todas as etapas da sua experiência conosco.
+                </p>
+            </div>
+            <div class="accordion-content">
+                <header>
+                    <span class="title">Qual o diferencial da BCX Corretora?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </header>
+                <p class="description">
+                  A BCX Corretora oferece uma equipe com estratégias operacionais de Trade, além de profissionais qualificados e certificados para oferecer a melhor estratégia de acordo com o perfil do seu cliente.
+                </p>
+            </div>
+            <div class="accordion-content">
+                <header>
+                    <span class="title">O que é KYC (Know your customer)?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </header>
+                <p class="description">
+                  É o documento que exige que os provedores de serviços financeiros registrem informações e identifiquem seus clientes, sob lei 9.613/98, que dispõe sobre a prevenção da utilização do sistema financeiro para fins ilícitos, mais especificamente em seu Art. 10º; bem como também há regulamentação pelo Normativo SARB 011/2013 da Federação Brasileira de Bancos (Febraban) - PEP (Pessoa Politicamente Exposta);
+                </p>
+            </div>
+        </div>
+
+    </section>
+
     <div class="btn-back">
       <a href="./glossario.html">
         <button>
@@ -321,18 +374,23 @@
         <a href=""> <span>TARIFA</span> </a>
         <a href=""> <span>TERMOS</span> </a>
         <a href=""> <span>POLÍTICA DE PRIVACIDADE</span> </a>
+        <p>
+          <span>BCX CORRETORA</span><br>
+          Av. Osvaldo Reis, 3385 Sala 1407 <br>
+          Praia Brava - Itajaí - SC <br>
+          88306-773
+        </p>
       </div>
       <div class="footer-2">
         <img src="../assets/LogoBCXfooter.png" />
       </div>
       <div class="footer-3">
-        <a href="https://api.whatsapp.com/send?phone=554791280000" target="_blank">  <button>ENTRE EM CONTATO</button>  </a>
+        <button><i class="fa-brands fa-whatsapp fa-lg" style="color: #00eb1b;"></i> <a href="https://api.whatsapp.com/send?phone=554791280000" target="_blank">ENTRE EM CONTATO  </a></button>
         <div class="foot-rights">
           <span>CNPJ 21.830.817/001-67</span>
           <span>Todos os direitos reservados © </span>
         </div>
         <div class="social">
-          <a href="#">  <img src="../assets/logotipo-do-aplicativo-do-facebook.png" /> </a>
         <a href="https://www.instagram.com/bcxcorretora/?hl=en" target="_blank">  <img src="../assets/instagram.png" /> </a>
         <a href="https://x.com/bcxcorretora?s=11&t=os_hvHZACyMFKYUcNuvH2g" target="_blank">  <img src="../assets/sinal-do-twitter.png" /> </a>
         </div>
@@ -347,6 +405,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/1eddf1ab1e.js" crossorigin="anonymous"></script>
     <script>window.gtranslateSettings = {"default_language":"pt","native_language_names":true,"detect_browser_language":true,"languages":["pt","en"],"wrapper_selector":".gtranslate_wrapper","flag_size":32,"alt_flags":{"en":"usa","pt":"brazil"}}</script>
 
     <script>
@@ -384,6 +443,34 @@
           distance: '200px'
         })
 
+        /* FAQ */
+
+        const accordionContent = document.querySelectorAll(".accordion-content");
+        accordionContent.forEach((item, index) => {
+            let header = item.querySelector("header");
+            header.addEventListener("click", () =>{
+                item.classList.toggle("open");
+                let description = item.querySelector(".description");
+                if(item.classList.contains("open")){
+                    description.style.height = `${description.scrollHeight}px`; //scrollHeight property returns the height of an element including padding , but excluding borders, scrollbar or margin
+                    item.querySelector("i").classList.replace("fa-plus", "fa-minus");
+                }else{
+                    description.style.height = "0px";
+                    item.querySelector("i").classList.replace("fa-minus", "fa-plus");
+                }
+                removeOpen(index); //calling the function and also passing the index number of the clicked header
+            })
+        })
+        function removeOpen(index1){
+            accordionContent.forEach((item2, index2) => {
+                if(index1 != index2){
+                    item2.classList.remove("open");
+                    let des = item2.querySelector(".description");
+                    des.style.height = "0px";
+                    item2.querySelector("i").classList.replace("fa-minus", "fa-plus");
+                }
+            })
+          }
     </script>
   </body>
 </html>
