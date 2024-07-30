@@ -66,7 +66,7 @@
               <form class="card-body-form" action="">
                 <div class="form-radio">
                   <div class="form-radio-pf">
-                    <input type="radio" id="PF" name="cadastro" value="PF">
+                    <input checked type="radio" id="PF" name="cadastro" value="PF">
                     <label for="PF">Pessoa Física</label>
                   </div>
                   <div class="form-radio-pj">
@@ -148,6 +148,7 @@
         
         const NomeFantasia = document.querySelector("#fantasia");
         let InputRadios = document.querySelectorAll('input[name="cadastro"]');
+        NomeFantasia.setAttribute("hidden", "hidden");
 
         let ChangeInputRadio = () => {
           let selected = document.querySelector("input[name='cadastro']:checked").value;
