@@ -506,6 +506,17 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
+  .trajetoria {
+    position: relative;
+  }
+  .trajetoria-titulo {
+    position: absolute;
+    top: 0;
+    padding: 5% 0;
+  }
+  .slide-container {
+    margin-top: 20%;
+  }
   footer {
     display: flex;
     flex-direction: column;
@@ -562,6 +573,9 @@ footer {
   }
 }
 @media screen and (min-width: 350px) and (max-width: 760px) {
+  .gtranslate_wrapper {
+    margin-bottom: 20px;
+  }
   .sec-1 {
     flex-direction: column;
   }

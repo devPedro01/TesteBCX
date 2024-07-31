@@ -575,6 +575,9 @@ footer {
   }
 }
 @media screen and (min-width: 300px) and (max-width: 760px) {
+  .gtranslate_wrapper {
+    margin-bottom: 20px;
+  }
   main {
     flex-direction: column;
   }

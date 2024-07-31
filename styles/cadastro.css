@@ -423,7 +423,9 @@ footer {
 }
 
 @media screen and (min-width: 350px) and (max-width: 760px) {
-
+  .gtranslate_wrapper {
+    margin-bottom: 20px;
+  }
   .container {
     min-height: 140vh;
     max-height: 170vh;

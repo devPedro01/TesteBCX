@@ -374,7 +374,9 @@ footer {
 }
 
 @media screen and (min-width: 350px) and (max-width: 760px) {
-
+  .gtranslate_wrapper {
+    margin-bottom: 20px;
+  }
   .card {
     height: 95%;
     margin-top: 30px;
