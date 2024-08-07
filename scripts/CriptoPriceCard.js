@@ -1,5 +1,8 @@
-callApiCriptoPrices();
-    
+      callApiCriptoPrices();
+      setInterval(() => {
+        callApiCriptoPrices();
+      }, 5000)
+
       async function callApiCriptoPrices() {
         await fetch("https://dev.bcxcorretora.com.br/api/prices", {
           method: "GET",

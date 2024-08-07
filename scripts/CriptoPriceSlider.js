@@ -1,4 +1,7 @@
-callApiCriptoPrices();
+      callApiCriptoPrices();
+      setInterval(() => {
+        callApiCriptoPrices();
+      }, 5000)
 
       async function callApiCriptoPrices() {
         await fetch("https://dev.bcxcorretora.com.br/api/prices", {
@@ -10,10 +13,10 @@ callApiCriptoPrices();
           return res.json()
         }).then((data) => {
           createSliderCripto(data)
+        }).catch((err) => {
+          console.log(err);
         })
-        setInterval(callApiCriptoPrices, 10000)
       }
-
 
       function createSliderCripto(data) {
         const bitcoinPrice = document.querySelectorAll('.bitcoin-price');
