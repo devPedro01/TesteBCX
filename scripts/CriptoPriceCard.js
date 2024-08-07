@@ -1,5 +1,5 @@
 callApiCriptoPrices();
-
+    
       async function callApiCriptoPrices() {
         await fetch("https://dev.bcxcorretora.com.br/api/prices", {
           method: "GET",

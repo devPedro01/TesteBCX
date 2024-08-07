@@ -7,6 +7,14 @@
     box-sizing: border-box;
     font-family: 'Helvetica';
 }
+*::-webkit-scrollbar {
+  width: 8px;
+  background-color: #001535b3;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #ceba85;
+  transition: all .2s;
+}
 
 :root {
   --slide-cripto: 100%
