@@ -13,8 +13,6 @@
           return res.json()
         }).then((data) => {
           createSliderCripto(data)
-        }).catch((err) => {
-          console.log(err);
         })
       }
 

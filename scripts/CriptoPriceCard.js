@@ -14,7 +14,6 @@
         }).then((data) => {
           createCardCripto(data)
         })
-        setInterval(callApiCriptoPrices, 10000)
       }
 
 
